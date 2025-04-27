@@ -1,6 +1,5 @@
-package com.tamersarioglu.ratemecha.ui.theme
+package com.tamersarioglu.ratemecha.presentation.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

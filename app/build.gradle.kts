@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias { libs.plugins.parcelize }
 }
 
 android {
@@ -28,6 +29,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2:8080/api/\"")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -38,6 +42,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -67,6 +72,9 @@ dependencies {
     //retrofit
     implementation(libs.retrofit2.retrofit)
 
+    //gson
+    implementation(libs.gson)
+
     //serialization
     implementation(libs.kotlinx.serialization.json)
 
@@ -75,4 +83,11 @@ dependencies {
 
     //Extended Material Icons
     implementation(libs.androidx.material.icons.extended)
+
+    // DataStore
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.datastore.preferences.core)
+
+    //Logging
+    implementation(libs.logging.interceptor)
 }

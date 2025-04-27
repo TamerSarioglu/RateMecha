@@ -1,4 +1,4 @@
-package com.tamersarioglu.ratemecha.ui.theme
+package com.tamersarioglu.ratemecha.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
