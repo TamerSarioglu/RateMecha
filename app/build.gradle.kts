@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tamersarioglu.RateMecha"
+    namespace = "com.tamersarioglu.ratemecha"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tamersarioglu.RateMecha"
+        applicationId = "com.tamersarioglu.ratemecha"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -86,7 +86,6 @@ dependencies {
 
     // DataStore
     implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.datastore.preferences.core)
 
     //Logging
     implementation(libs.logging.interceptor)

@@ -1,6 +1,6 @@
 package com.tamersarioglu.ratemecha.di
 
-import com.tamersarioglu.RateMecha.BuildConfig
+import com.tamersarioglu.ratemecha.BuildConfig
 import com.tamersarioglu.ratemecha.data.remote.api.AuthApi
 import com.tamersarioglu.ratemecha.data.remote.api.MechanicApi
 import com.tamersarioglu.ratemecha.data.remote.api.ReviewApi
