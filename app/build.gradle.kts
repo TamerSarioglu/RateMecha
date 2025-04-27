@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tamersarioglu.helpme"
+    namespace = "com.tamersarioglu.RateMecha"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.tamersarioglu.helpme"
+        applicationId = "com.tamersarioglu.RateMecha"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
