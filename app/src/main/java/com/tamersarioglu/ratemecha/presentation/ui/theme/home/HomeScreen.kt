@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Person
@@ -34,10 +33,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -174,8 +173,6 @@ fun FilterChips(
     onSpecialtySelected: (String?) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // This would be expanded to include scrollable chips
-    // Simplified for this example
     Row(
         modifier = modifier,
         verticalAlignment = Alignment.CenterVertically
@@ -186,9 +183,6 @@ fun FilterChips(
         )
 
         Spacer(modifier = Modifier.width(8.dp))
-
-        // Example filter chip implementation would go here
-        // Omitted for brevity
     }
 }
 
@@ -317,4 +311,13 @@ fun RatingBar(
             )
         }
     }
+}
+
+@Preview
+@Composable
+fun HomeScreenPreview(){
+    HomeScreen(
+        onMechanicClick = {},
+        onProfileClick = {}
+    )
 }

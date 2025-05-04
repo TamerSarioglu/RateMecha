@@ -73,7 +73,7 @@ dependencies {
     implementation(libs.retrofit2.retrofit)
 
     //gson
-    implementation(libs.gson)
+    implementation(libs.converter.gson)
 
     //serialization
     implementation(libs.kotlinx.serialization.json)
